@@ -207,31 +207,31 @@ button{
 
 </div>
 
-<!-- beep minimale -->
-<audio id="beep" src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA="></audio>
+<!-- AUDIO FUNZIONANTE SU MOBILE -->
+<audio id="beep" src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3"></audio>
 
 <script>
 function playBeep(){
-  var b=document.getElementById("beep");
-  b.currentTime=0;
-  b.play().catch(function(){});
+  const b = document.getElementById("beep");
+  b.currentTime = 0;
+  b.play().catch(()=>{});
 }
 
 function calcTotal(){
-  var total=0;
-  document.querySelectorAll("input[type=radio]:checked").forEach(function(r){
-    total+=parseInt(r.value);
+  let total = 0;
+  document.querySelectorAll("input[type=radio]:checked").forEach(r=>{
+    total += parseInt(r.value);
   });
-  document.getElementById("total").innerText=total;
+  document.getElementById("total").innerText = total;
   playBeep();
 }
 
 function resetGame(){
-  document.querySelectorAll("input").forEach(function(i){
+  document.querySelectorAll("input").forEach(i=>{
     if(i.type==="radio") i.checked=false;
     if(i.type==="text") i.value="";
   });
-  document.getElementById("total").innerText=0;
+  document.getElementById("total").innerText = 0;
   playBeep();
 }
 </script>
