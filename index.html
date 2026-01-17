@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poto, Cose e Città</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#020617;
+  color:white;
+}
+.game{
+  max-width:480px;
+  margin:auto;
+  padding:16px;
+}
+h1{
+  text-align:center;
+  color:#7dd3fc;
+}
+.subtitle{
+  text-align:center;
+  font-size:13px;
+  color:#93c5fd;
+  margin-bottom:12px;
+}
+.field{
+  border:2px solid #1e3a8a;
+  border-radius:12px;
+  padding:10px;
+  margin-bottom:10px;
+}
+.field label{
+  font-weight:bold;
+  color:#bfdbfe;
+  display:block;
+  margin-bottom:6px;
+}
+.answer{
+  display:flex;
+  gap:6px;
+  align-items:center;
+}
+.answer input[type=text]{
+  flex:1;
+  padding:8px;
+  background:#020617;
+  border:1px solid #1e40af;
+  color:white;
+  border-radius:8px;
+}
+.points label{
+  font-size:11px;
+  margin-right:4px;
+  color:#bfdbfe;
+}
+.total{
+  text-align:center;
+  font-size:20px;
+  font-weight:bold;
+  color:#7dd3fc;
+  margin:12px 0;
+}
+button{
+  width:100%;
+  padding:14px;
+  margin-top:8px;
+  border:none;
+  border-radius:16px;
+  font-size:16px;
+  font-weight:bold;
+}
+.calc{background:#2563eb;color:white;}
+.reset{background:#ef4444;color:white;}
+</style>
+</head>
+
+<body>
+<div class="game">
+<h1>POTO, COSE E CITTÀ</h1>
+<div class="subtitle">Seleziona i punti per ogni risposta</div>
+
+<div class="field">
+<label>NOMI</label>
+<div class="answer">
+<input type="text">
+<div class="points">
+<label><input type="radio" name="p1" value="0">0</label>
+<label><input type="radio" name="p1" value="5">5</label>
+<label><input type="radio" name="p1" value="10">10</label>
+<label><input type="radio" name="p1" value="15">15</label>
+</div>
+</div>
+</div>
+
+<div class="field">
+<label>OGGETTI</label>
+<div class="answer">
+<input type="text">
+<div class="points">
+<label><input type="radio" name="p2" value="0">0</label>
+<label><input type="radio" name="p2" value="5">5</label>
+<label><input type="radio" name="p2" value="10">10</label>
+<label><input type="radio" name="p2" value="15">15</label>
+</div>
+</div>
+</div>
+
+<div class="field">
+<label>PIANTE E FIORI</label>
+<div class="answer">
+<input type="text">
+<div class="points">
+<label><input type="radio" name="p3" value="0">0</label>
+<label><input type="radio" name="p3" value="5">5</label>
+<label><input type="radio" name="p3" value="10">10</label>
+<label><input type="radio" name="p3" value="15">15</label>
+</div>
+</div>
+</div>
+
+<div class="field">
+<label>COLORI E SFUMATURE</label>
+<div class="answer">
+<input type="text">
+<div class="points">
+<label><input type="radio" name="p4" value="0">0</label>
+<label><input type="radio" name="p4" value="5">5</label>
+<label><input type="radio" name="p4" value="10">10</label>
+<label><input type="radio" name="p4" value="15">15</label>
+</div>
+</div>
+</div>
+
+<div class="field">
+<label>PERSONAGGI STORICI / FANTASIA</label>
+<div class="answer">
+<input type="text">
+<div class="points">
+<label><input type="radio" name="p5" value="0">0</label>
+<label><input type="radio" name="p5" value="5">5</label>
+<label><input type="radio" name="p5" value="10">10</label>
+<label><input type="radio" name="p5" value="15">15</label>
+</div>
+</div>
+</div>
+
+<div class="field">
+<label>FILM</label>
+<div class="answer">
+<input type="text">
+<div class="points">
+<label><input type="radio" name="p6" value="0">0</label>
+<label><input type="radio" name="p6" value="5">5</label>
+<label><input type="radio" name="p6" value="10">10</label>
+<label><input type="radio" name="p6" value="15">15</label>
+</div>
+</div>
+</div>
+
+<div class="field">
+<label>LAVORI</label>
+<div class="answer">
+<input type="text">
+<div class="points">
+<label><input type="radio" name="p7" value="0">0</label>
+<label><input type="radio" name="p7" value="5">5</label>
+<label><input type="radio" name="p7" value="10">10</label>
+<label><input type="radio" name="p7" value="15">15</label>
+</div>
+</div>
+</div>
+
+<div class="field">
+<label>MONDO DELLO SPETTACOLO</label>
+<div class="answer">
+<input type="text">
+<div class="points">
+<label><input type="radio" name="p8" value="0">0</label>
+<label><input type="radio" name="p8" value="5">5</label>
+<label><input type="radio" name="p8" value="10">10</label>
+<label><input type="radio" name="p8" value="15">15</label>
+</div>
+</div>
+</div>
+
+<div class="field">
+<label>MARCHI & LOGHI</label>
+<div class="answer">
+<input type="text">
+<div class="points">
+<label><input type="radio" name="p9" value="0">0</label>
+<label><input type="radio" name="p9" value="5">5</label>
+<label><input type="radio" name="p9" value="10">10</label>
+<label><input type="radio" name="p9" value="15">15</label>
+</div>
+</div>
+</div>
+
+<div class="total">Totale punti: <span id="total">0</span></div>
+
+<button class="calc" onclick="calcTotal()">Calcola Totale</button>
+<button class="reset" onclick="resetGame()">Reset</button>
+
+</div>
+
+<!-- beep minimale -->
+<audio id="beep" src="data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEAESsAACJWAAACABAAZGF0YQAAAAA="></audio>
+
+<script>
+function playBeep(){
+  var b=document.getElementById("beep");
+  b.currentTime=0;
+  b.play().catch(function(){});
+}
+
+function calcTotal(){
+  var total=0;
+  document.querySelectorAll("input[type=radio]:checked").forEach(function(r){
+    total+=parseInt(r.value);
+  });
+  document.getElementById("total").innerText=total;
+  playBeep();
+}
+
+function resetGame(){
+  document.querySelectorAll("input").forEach(function(i){
+    if(i.type==="radio") i.checked=false;
+    if(i.type==="text") i.value="";
+  });
+  document.getElementById("total").innerText=0;
+  playBeep();
+}
+</script>
+
+</body>
+</html>
